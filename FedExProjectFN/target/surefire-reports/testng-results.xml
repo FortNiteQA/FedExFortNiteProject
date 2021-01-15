@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="269741" started-at="2021-01-14T18:54:04 EST" finished-at="2021-01-14T18:58:34 EST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fedex.RunnerTest.FedExRunner$RunCucumberTest@51cdd8a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="269741" started-at="2021-01-14T18:54:04 EST" finished-at="2021-01-14T18:58:34 EST">
+      <class name="fedex.RunnerTest.FedExRunner$RunCucumberTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:fedex.RunnerTest.FedExRunner$RunCucumberTest@51cdd8a]" name="setUpClass" is-config="true" duration-ms="1611" started-at="2021-01-14T18:54:04 EST" finished-at="2021-01-14T18:54:06 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fedex.RunnerTest.FedExRunner$RunCucumberTest@51cdd8a]" name="runScenario" duration-ms="91325" started-at="2021-01-14T18:54:06 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-14T18:55:37 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["As a user , I can see cupon pdf file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["verify Cupon pdf feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fedex.RunnerTest.FedExRunner$RunCucumberTest@51cdd8a]" name="runScenario" duration-ms="37138" started-at="2021-01-14T18:55:37 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-14T18:56:14 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["As a user , I can verify profile after create a print profile"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify create a print profile"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fedex.RunnerTest.FedExRunner$RunCucumberTest@51cdd8a]" name="runScenario" duration-ms="19845" started-at="2021-01-14T18:56:14 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-14T18:56:34 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["As a user I should be able change Language as I need"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify Language Chnage"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fedex.RunnerTest.FedExRunner$RunCucumberTest@51cdd8a]" name="runScenario" duration-ms="33903" started-at="2021-01-14T18:56:34 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-14T18:57:08 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["As a user , I can able to go back from about page to hame page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify navigate back and forth among pages"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fedex.RunnerTest.FedExRunner$RunCucumberTest@51cdd8a]" name="runScenario" duration-ms="14585" started-at="2021-01-14T18:57:08 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-14T18:57:23 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Search icon"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify Search icon"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fedex.RunnerTest.FedExRunner$RunCucumberTest@51cdd8a]" name="runScenario" duration-ms="41713" started-at="2021-01-14T18:57:23 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-14T18:58:05 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["As a user I should be able to find price options for shipments."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify price quotes and available options for shipments"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="shippingToResidenceAddressLabel"]"}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AHADUJJAMAN', ip: '192.168.1.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\RONY\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:7417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4bb4f11053252063b790d9bb57180187
+*** Element info: {Using=xpath, value=//*[@id="shippingToResidenceAddressLabel"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="shippingToResidenceAddressLabel"]"}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AHADUJJAMAN', ip: '192.168.1.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\RONY\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:7417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4bb4f11053252063b790d9bb57180187
+*** Element info: {Using=xpath, value=//*[@id="shippingToResidenceAddressLabel"]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)
+at fedex.Actions.ShipRateActions.check(ShipRateActions.java:56)
+at fedex.StepDefinition.ShipRateStepDef.click_on_checkbox(ShipRateStepDef.java:26)
+at ✽.click on checkbox(file:///E:/TALEN%20TECH/Talentec%20Works/FedExProjectFN/src/test/resources/Features/ShipRate.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:fedex.RunnerTest.FedExRunner$RunCucumberTest@51cdd8a]" name="runScenario" duration-ms="27481" started-at="2021-01-14T18:58:05 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-14T18:58:32 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify FedEx signup Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["FedEx signup Page test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:fedex.RunnerTest.FedExRunner$RunCucumberTest@51cdd8a]" name="tearDownClass" is-config="true" duration-ms="2040" started-at="2021-01-14T18:58:32 EST" finished-at="2021-01-14T18:58:34 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- fedex.RunnerTest.FedExRunner$RunCucumberTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

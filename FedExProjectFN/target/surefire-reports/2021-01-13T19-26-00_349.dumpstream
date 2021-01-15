@@ -1,0 +1,4 @@
+# Created at 2021-01-13T19:26:02.603
+Boot Manifest-JAR contains absolute paths in classpath 'E:\TALEN TECH\Talentec Works\FedExProjectFN\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
