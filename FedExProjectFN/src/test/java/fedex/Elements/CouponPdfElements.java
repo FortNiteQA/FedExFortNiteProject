@@ -18,4 +18,7 @@ public class CouponPdfElements {
 	
 	@FindBy(css = "body")
 	public WebElement backMainLink;
+	
 }
+
+

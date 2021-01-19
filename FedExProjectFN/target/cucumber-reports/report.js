@@ -5,7 +5,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "As a user , I can see cupon pdf file",
+  "name": "As a user , customer should be able to see cupon pdf file",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -57,7 +57,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "As a user , I can verify profile after create a print profile",
+  "name": "As a user , customer should be able to verify profile after create a print profile",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -115,6 +115,78 @@ formatter.step({
 });
 formatter.match({
   "location": "fedex.StepDefinition.CreatePrintProfileStepDef.click_on_submit_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/Features/FedExLogin.feature");
+formatter.feature({
+  "name": "Verify Login page",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "As a user , Customer should be able to Login successfully",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Sanity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Customer land on Fedex Homepage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "fedex.StepDefinition.LoginStepDef.customer_land_on_Fedex_Homepage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "customer clicks on Signup or login",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "fedex.StepDefinition.LoginStepDef.customer_clicks_on_Signup_or_login()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "customer put UserId \"Ruhi123\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fedex.StepDefinition.LoginStepDef.customer_put_UserId(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Customer put Password \"Crazy1234\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fedex.StepDefinition.LoginStepDef.customer_put_Password(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Customer able to Login Successfully",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "fedex.StepDefinition.LoginStepDef.customer_able_to_Login_Successfully()"
 });
 formatter.result({
   "status": "passed"
@@ -191,7 +263,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "As a user , I can able to go back from about page to hame page",
+  "name": "As a user , customer should be able to go back from about page to hame page",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -253,7 +325,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Verify Search icon",
+  "name": "As a user, customer should be able to Search tracking number in search icon",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -375,7 +447,7 @@ formatter.match({
   "location": "fedex.StepDefinition.ShipRateStepDef.click_on_checkbox()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"shippingToResidenceAddressLabel\"]\"}\n  (Session info: chrome\u003d87.0.4280.141)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027AHADUJJAMAN\u0027, ip: \u0027192.168.1.206\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_111\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\\Users\\RONY\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:7417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 4bb4f11053252063b790d9bb57180187\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"shippingToResidenceAddressLabel\"]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)\r\n\tat fedex.Actions.ShipRateActions.check(ShipRateActions.java:56)\r\n\tat fedex.StepDefinition.ShipRateStepDef.click_on_checkbox(ShipRateStepDef.java:26)\r\n\tat ✽.click on checkbox(file:///E:/TALEN%20TECH/Talentec%20Works/FedExProjectFN/src/test/resources/Features/ShipRate.feature:11)\r\n",
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"shippingToResidenceAddressLabel\"]\"}\n  (Session info: chrome\u003d87.0.4280.141)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-PJGQ8E5S\u0027, ip: \u0027192.168.1.165\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\\Users\\Hasan\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51294}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 814863873f6097af3137b74f3d34f477\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"shippingToResidenceAddressLabel\"]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy22.isDisplayed(Unknown Source)\r\n\tat fedex.Actions.ShipRateActions.check(ShipRateActions.java:56)\r\n\tat fedex.StepDefinition.ShipRateStepDef.click_on_checkbox(ShipRateStepDef.java:26)\r\n\tat ✽.click on checkbox(file:///C:/Users/Hasan/git/FedExFortNiteProject/FedExProjectFN/src/test/resources/Features/ShipRate.feature:7)\r\n",
   "status": "failed"
 });
 formatter.step({
@@ -442,6 +514,70 @@ formatter.embedding("image/png", "embedded0.png", "As_a_user_I_should_be_able_to
 formatter.after({
   "status": "passed"
 });
+formatter.uri("file:src/test/resources/Features/Shipping.feature");
+formatter.feature({
+  "name": "FedEx Shipping page validation",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "As a user, customer should be able to land on Create FedEx shipment page",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Sanity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User lands on FedEx homepage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "fedex.StepDefinition.ShippingStepDef.user_lands_on_FedEx_homepage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks Return A Package",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "fedex.StepDefinition.ShippingStepDef.clicks_Return_A_Package()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks on creating a shipping level",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fedex.StepDefinition.ShippingStepDef.clicks_on_creating_a_shipping_level()"
+});
+formatter.result({
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[2]/div[2]/div[1]/div[4]/div/div[2]/div[13]/div/a\"}\n  (Session info: chrome\u003d87.0.4280.141)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-PJGQ8E5S\u0027, ip: \u0027192.168.1.165\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\\Users\\Hasan\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51352}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: f56fee88acd7235a099cb642e72d6d3b\n*** Element info: {Using\u003dxpath, value\u003d/html/body/div[2]/div[2]/div[1]/div[4]/div/div[2]/div[13]/div/a}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy22.click(Unknown Source)\r\n\tat fedex.Actions.ShippingActions.clickCreateShipmentLevel(ShippingActions.java:29)\r\n\tat fedex.StepDefinition.ShippingStepDef.clicks_on_creating_a_shipping_level(ShippingStepDef.java:26)\r\n\tat ✽.clicks on creating a shipping level(file:///C:/Users/Hasan/git/FedExFortNiteProject/FedExProjectFN/src/test/resources/Features/Shipping.feature:6)\r\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "new window will be open for shipment",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "fedex.StepDefinition.ShippingStepDef.new_window_will_be_open_for_shipment()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.embedding("image/png", "embedded1.png", "As_a_user,_customer_should_be_able_to_land_on_Create_FedEx_shipment_page");
+formatter.after({
+  "status": "passed"
+});
 formatter.uri("file:src/test/resources/Features/SignUP.feature");
 formatter.feature({
   "name": "FedEx signup Page test",
@@ -449,7 +585,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Verify FedEx signup Page",
+  "name": "As a user, customer should be able to fillup FedEx signup Page",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -607,6 +743,68 @@ formatter.step({
 });
 formatter.match({
   "location": "fedex.StepDefinition.SignUpStepDef.user_can_see_the_accont_information_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/Features/Tracking.feature");
+formatter.feature({
+  "name": "Tracking progress of shipment",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "As a user, customer should be able to Track a Shipment",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Sanity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user navigate the homepage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "fedex.StepDefinition.TrackingStepDef.user_navigate_the_url_of_fedex()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on print and tracking menu",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "fedex.StepDefinition.TrackingStepDef.click_on_print_and_tracking_menu()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Input the tracking number",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fedex.StepDefinition.TrackingStepDef.input_the_tracking_number()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on tracking button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fedex.StepDefinition.TrackingStepDef.click_on_tracking_button()"
 });
 formatter.result({
   "status": "passed"
