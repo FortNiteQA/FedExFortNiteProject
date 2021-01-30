@@ -47,7 +47,8 @@ public class LoginActions {
 		fedexLoginElements.password.sendKeys(password);
 	}
 
-	public void clickLoginBtn() {
+	public void clickLoginBtn() throws InterruptedException {
 		fedexLoginElements.loginBtn.click();
+		Thread.sleep(2000);
 	}
 }

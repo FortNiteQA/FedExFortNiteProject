@@ -34,9 +34,10 @@ TrackingElements trackEle;
 		trackEle.trackingText.sendKeys("782184933994");
 	}
 
-	public void trackingBtn() {
+	public void trackingBtn() throws InterruptedException {
 	
 		trackEle.trackingBtn.click();
+		Thread.sleep(3000);
 		
 	}
 }

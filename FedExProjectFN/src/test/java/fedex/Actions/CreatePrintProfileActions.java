@@ -57,5 +57,14 @@ public class CreatePrintProfileActions {
 	}
 	
 	
-	
+	 public boolean verifyPrintProfilepage() {
+		boolean bool = false;
+		System.out.println(SetupDrivers.chromeDriver.getTitle());
+		System.out.println();
+		if (SetupDrivers.chromeDriver.getTitle().contains("Create Profile")) {
+			bool = true;
+		}
+
+		return bool;
+	}
 }

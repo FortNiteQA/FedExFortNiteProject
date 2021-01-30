@@ -7,30 +7,40 @@ import io.cucumber.java.en.When;
 
 public class ShippingStepDef {
 
-	ShippingActions shipaction=new ShippingActions();
+	ShippingActions shippingWinAct = new ShippingActions();
 	
 	@Given("User lands on FedEx homepage")
-	public void user_lands_on_FedEx_homepage() {
-		shipaction.getFedexHomepage();
+	public void User_lands_on_FedEx_homepage() throws InterruptedException {
+		shippingWinAct.pageOpen();   
+	}
+	
+	
+	@When("click on return pkg")
+	public void click_on_return_pkg() throws InterruptedException {
+		shippingWinAct.returnPkg();
 	    
 	}
 
-	@When("clicks Return A Package")
-	public void clicks_Return_A_Package() {
-		shipaction.clickReturnPackage();
+	@When("scroll and click on create shipping label")
+	public void scroll_and_click_on_create_shipping_label() throws InterruptedException {
+		shippingWinAct.createLabel();
 	    
 	}
 
-	@When("clicks on creating a shipping level")
-	public void clicks_on_creating_a_shipping_level() {
-		shipaction.clickCreateShipmentLevel();
+	@When("Input your name and receipent name")
+	public void input_your_name_and_receipent_name() throws InterruptedException {
 	    
+		shippingWinAct.returnInfo();
 	}
 
-
-	@Then("new window will be open for shipment")
-	public void new_window_will_be_open_for_shipment() {
-		shipaction.verifyShippingPage();
+	@When("click on continue")
+	public void click_on_continue() throws InterruptedException {
 	    
+		shippingWinAct.continueButton();
+	}
+
+	@Then("shows error msg")
+	public void shows_error_msg() throws InterruptedException {
+		shippingWinAct.errorMsg();
 	}
 }

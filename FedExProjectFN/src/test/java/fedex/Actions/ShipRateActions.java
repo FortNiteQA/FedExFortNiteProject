@@ -48,7 +48,7 @@ ShipRateElements rateEle;
 		Thread.sleep(3000);
 		rateEle.to.sendKeys(Keys.ARROW_DOWN);
 		Thread.sleep(3000);
-		rateEle.to.sendKeys(Keys.RETURN);
+		rateEle.to.sendKeys(Keys.ENTER);
 		
 	}
 	

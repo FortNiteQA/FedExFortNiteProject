@@ -9,7 +9,7 @@ public class FedExRunner {
 			"json:target/cucumber-jsonreports/cucumber.json",
 			"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, 
 			features = {"src/test/resources/Features" }, 
-			glue = { "fedex.StepDefinition" }, tags ={"@Sanity"}, monochrome = true)
+			glue = { "fedex.StepDefinition" }, tags ={"@Sprint1"}, monochrome = true)
 
 	public class RunCucumberTest extends AbstractTestNGCucumberTests {
 		 

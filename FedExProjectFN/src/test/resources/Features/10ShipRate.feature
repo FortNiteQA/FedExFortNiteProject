@@ -1,5 +1,5 @@
 Feature: Verify price quotes and available options for shipments
-@Sanity
+@Sprint1
 Scenario: As a user I should be able to find price options for shipments.
 	Given user navigate the url
 	When User clicks on Rate & Ship

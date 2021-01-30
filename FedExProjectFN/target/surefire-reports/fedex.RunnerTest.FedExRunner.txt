@@ -1,16 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: fedex.RunnerTest.FedExRunner
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 272.318 s <<< FAILURE! - in fedex.RunnerTest.FedExRunner
-fedex.RunnerTest.FedExRunner$RunCucumberTest.runScenario["As a user I should be able to find price options for shipments.", "Verify price quotes and available options for shipments"](6)  Time elapsed: 41.83 s  <<< FAILURE!
+Tests run: 13, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 361.012 s <<< FAILURE! - in fedex.RunnerTest.FedExRunner
+fedex.RunnerTest.FedExRunner$RunCucumberTest.runScenario["As a user I should be able to find price options for shipments.", "Verify price quotes and available options for shipments"](1)  Time elapsed: 73.304 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="shippingToResidenceAddressLabel"]"}
-  (Session info: chrome=87.0.4280.141)
+  (Session info: chrome=88.0.4324.104)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'AHADUJJAMAN', ip: '192.168.1.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\RONY\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:7417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4bb4f11053252063b790d9bb57180187
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\RONY\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:11519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 36c6eb6e0f9931140e3512e752e915a5
 *** Element info: {Using=xpath, value=//*[@id="shippingToResidenceAddressLabel"]}
+
+fedex.RunnerTest.FedExRunner$RunCucumberTest.runScenario["As a user, customer should be able to land on Create FedEx shipment page", "FedEx Shipping page validation"](8)  Time elapsed: 28.015 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div/div[3]/div[4]/div/table[2]/thead/tr/th[4]/div[3]/div/a"}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AHADUJJAMAN', ip: '192.168.1.206', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\RONY\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:12069}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: afa3cd87b116313ef6e196d82a4adb26
+*** Element info: {Using=xpath, value=/html/body/main/div/div[3]/div[4]/div/table[2]/thead/tr/th[4]/div[3]/div/a}
 

@@ -42,8 +42,9 @@ public class SearchVerifyActions {
 	}
 	
 	
-	public void errorMsg() {
+	public void errorMsg() throws InterruptedException {
 		searchEle.errorMsg.getText();
+		Thread.sleep(2000);
 	
 	}
 }

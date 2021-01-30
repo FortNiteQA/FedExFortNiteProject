@@ -40,8 +40,9 @@ public class LanguageActions {
 		
 	}
 	
-	public void espaniolText() {
+	public void espaniolText() throws InterruptedException {
 		langEle.spanishText.isDisplayed();
+		Thread.sleep(2000);
 		
 	}
 

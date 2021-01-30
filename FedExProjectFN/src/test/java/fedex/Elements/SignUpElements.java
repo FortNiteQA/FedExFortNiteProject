@@ -61,4 +61,5 @@ public class SignUpElements {
 	
 	@FindBy(xpath = "//*[@id=\'createUserID\']")
 	public WebElement continueToaccount;
+
 }

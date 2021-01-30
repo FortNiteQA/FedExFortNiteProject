@@ -2,6 +2,7 @@ package fedex.StepDefinition;
 
 import fedex.Actions.CreatePrintProfileActions;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class CreatePrintProfileStepDef {
@@ -31,6 +32,12 @@ public class CreatePrintProfileStepDef {
 	@When("click on submit button")
 	public void click_on_submit_button() {
 		printProfileAction.submitButton();
+	}
+	
+	//
+	@Then("Print Profile page should open")
+	public void Print_Profile_page_should_open() {
+		printProfileAction.verifyPrintProfilepage();
 	}
 
 	

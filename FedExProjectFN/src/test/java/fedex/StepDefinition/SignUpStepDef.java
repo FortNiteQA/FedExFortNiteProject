@@ -13,7 +13,6 @@ public class SignUpStepDef {
 @Given("Customer launch in Home Page of the FedEx Website")
 public void customer_launch_in_Home_Page_of_the_FedEx() {	
 	signup.fedExHomePage();
-	signup.verifyHomepage();
     
 }
 
@@ -34,7 +33,6 @@ public void click_on_Open_Account() {
 
 @When("enter First Name and Last Name")
 public void enter_First_Name_and_Last_Name() {
-	signup.verifySignUppage();
 	signup.firstNameLastName();
 }
 
@@ -80,8 +78,8 @@ public void Customer_clik_on_continue_button() {
 	signup.continueToAccount();
 }
 
-@Then("User can see the accont information page")
-public void user_can_see_the_accont_information_page() {
-	signup.verifyAccountInformationPage();
+@Then("User should see the error message")
+public void User_should_see_the_error_message() {
+	signup.verifySignUppage();
 }
 }

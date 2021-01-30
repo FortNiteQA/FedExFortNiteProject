@@ -1,6 +1,6 @@
   
 Feature: Verify Search icon
-@Sanity
+@Sprint1
 Scenario: As a user, customer should be able to Search tracking number in search icon
   Given user navigate the url
   When I click on search icon 

@@ -28,8 +28,9 @@ public class SearchVerifyStepDef {
 	}
 
 	@Then("displayed error msg")
-	public void displayed_error_msg() {
+	public void displayed_error_msg() throws InterruptedException {
 	   
 		searchAct.errorMsg();
+		
 	}
 }

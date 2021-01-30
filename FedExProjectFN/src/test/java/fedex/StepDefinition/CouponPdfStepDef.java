@@ -2,6 +2,7 @@ package fedex.StepDefinition;
 
 import fedex.Actions.CouponPdfActions;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class CouponPdfStepDef {
@@ -21,7 +22,11 @@ public class CouponPdfStepDef {
 
 	@When("click on get cupon button")
 	public void click_on_get_cupon_button() throws InterruptedException {
-		cuponAct.getCupon();
-	    
+		cuponAct.getCupon();    
+	}
+	//
+	@Then("Pdf file in new window should open")
+	public void Pdf_file_in_new_window_should_open() {
+		cuponAct.verifyCouponPdfpage();
 	}
 }

@@ -26,7 +26,7 @@ public class LanguageStepDef {
 	}
 
 	@Then("displayed spanish language")
-	public void displayed_spanish_language() {
+	public void displayed_spanish_language() throws InterruptedException {
 	    
 		langAct.espaniolText();
 	}

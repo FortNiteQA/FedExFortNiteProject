@@ -57,5 +57,4 @@ public class CreatePrintProfileElements {
 	public WebElement submitBtn;
 	
 	
-	
 }

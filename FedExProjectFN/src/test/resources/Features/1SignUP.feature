@@ -1,6 +1,6 @@
 
 Feature: FedEx signup Page test
-@Sanity
+@Sprint1
 Scenario: As a user, customer should be able to fillup FedEx signup Page
 	Given Customer launch in Home Page of the FedEx Website
 	When Customer click on Sign Up
@@ -16,4 +16,4 @@ Scenario: As a user, customer should be able to fillup FedEx signup Page
 	And Customer select a secret question and enter  answer
 	And Customer accept terms and conditions
 	And Customer clik on continue button
-	Then User can see the accont information page
+	Then User should see the error message

@@ -4,7 +4,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-
 import fedex.Elements.SignUpElements;
 import fedex.Utilities.SetupDrivers;
 
@@ -83,7 +82,7 @@ public void state()  {
 
 	public void useridPassword()  {
 	
-	signup.userid.sendKeys("Talenuser80606");
+	signup.userid.sendKeys("Tale");
 	signup.password.sendKeys("Jamaica0606");
 	signup.repassword.sendKeys("Jamaica0606");
 }
@@ -110,7 +109,7 @@ public void state()  {
 
 	}
 	
-	public boolean verifyHomepage() {
+	/* public boolean verifyHomepage() {
 		boolean bool = false;
 		System.out.println(SetupDrivers.chromeDriver.getTitle());
 
@@ -119,9 +118,9 @@ public void state()  {
 		}
 
 		return bool;
-	}
+	}  */
 	
-	public boolean verifySignUppage() {
+	 public boolean verifySignUppage() {
 		boolean bool = false;
 		System.out.println(SetupDrivers.chromeDriver.getTitle());
 
@@ -131,15 +130,7 @@ public void state()  {
 
 		return bool;
 	}
+	 
 	
-	public boolean verifyAccountInformationPage() {
-		boolean bool = false;
-		System.out.println(SetupDrivers.chromeDriver.getTitle());
-
-		if (SetupDrivers.chromeDriver.getTitle().contains("account")) {
-			bool = true;
-		}
-
-		return bool;
-	}
+	
 }
