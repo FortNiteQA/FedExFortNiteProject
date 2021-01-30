@@ -46,6 +46,7 @@ public class PageBackandForthActions {
 		backAndForth.aboutText.isDisplayed();
 		
 	}
+
 	
 	public boolean verifyHomepage() {
 		boolean bool = false;
@@ -57,5 +58,17 @@ public class PageBackandForthActions {
 
 		return bool;
 	}
+		public void scrollDown {
+			JavascriptExecutor js = (JavascriptExecutor) chromeDriver;  
+			   js.executeScript("window.scrollBy(0,1000)");
+			
+		}
 		
+		public void scrollUP {
+			JavascriptExecutor js = (JavascriptExecutor) chromeDriver;  
+			   js.executeScript("window.scrollBy(0,-1000)");
+			
+		}
+	
+	
 }

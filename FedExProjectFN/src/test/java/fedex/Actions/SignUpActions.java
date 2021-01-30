@@ -17,16 +17,7 @@ SignUpElements signup;
 		PageFactory.initElements(SetupDrivers.chromeDriver, signup);
 	}	
 
-	
-	public void fedExHomePage() {			
-							
-		SetupDrivers.chromeDriver.get("https://www.fedex.com/en-us/home.html");
-		SetupDrivers.chromeDriver.manage().window().maximize();	
-		SetupDrivers.chromeDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-				
-	}
-	
-	
+		
 	public void SignUpLogin()  {
 		
 		signup.signupLogin.click();
@@ -63,8 +54,8 @@ SignUpElements signup;
 		signup.city.sendKeys("Jamaica");
 	}
 	
-	// drop down 
-public void state()  {
+
+	public void state()  {
 		
 	Select dropState = new Select(signup.state);
 	dropState.selectByVisibleText("New York(NY)");
@@ -119,6 +110,14 @@ public void state()  {
 		}
 
 		return bool;
+	}
+	
+	public void fedExHomePage() {			
+		
+		SetupDrivers.chromeDriver.get("https://www.fedex.com/en-us/home.html");
+		SetupDrivers.chromeDriver.manage().window().maximize();	
+		SetupDrivers.chromeDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+				
 	}
 	
 	public boolean verifySignUppage() {

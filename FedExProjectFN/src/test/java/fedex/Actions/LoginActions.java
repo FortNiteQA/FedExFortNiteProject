@@ -49,5 +49,11 @@ public class LoginActions {
 
 	public void clickLoginBtn() {
 		fedexLoginElements.loginBtn.click();
+		
 	}
+
+	
 }
+
+
+
